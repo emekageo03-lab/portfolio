@@ -175,18 +175,18 @@
                 <div class="contact-form-wrapper">
                     <div id="formMessage" class="form-message"></div>
                     <div class="input-group">
-                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="input-group">
-                        <input type="email" id="email" placeholder="Your Email" required>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
                     </div>
                     <div class="input-group">
-                        <input type="text" id="subject" placeholder="Subject" required>
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
                     </div>
                     <div class="input-group">
-                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
                     </div>
-                    <button class="btn btn-primary" onclick="handleSubmit()">Send Message</button>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
                 </div>
             </div>
         </div>

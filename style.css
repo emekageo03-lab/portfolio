@@ -315,8 +315,8 @@ nav {
 }
 
 .btn-secondary {
-    background: white;
-    color: #1e008a;
+    background: black;
+    color: #fff;
 }
 
 .btn-secondary:hover {

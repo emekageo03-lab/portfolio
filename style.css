@@ -315,12 +315,12 @@ nav {
 }
 
 .btn-secondary {
-    background: black;
+    background: #ff5a8d;
     color: #fff;
 }
 
 .btn-secondary:hover {
-    background: #f8f9fa;
+    background: #ff5a8d;
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
 }

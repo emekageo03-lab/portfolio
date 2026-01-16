@@ -315,12 +315,12 @@ nav {
 }
 
 .btn-secondary {
-    background: white;
-    color: #10ac84;
+    background: #ff5a8d;
+    color: #fff;
 }
 
 .btn-secondary:hover {
-    background: #f8f9fa;
+    background: #ff5a8d;
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
 }
@@ -368,7 +368,7 @@ nav {
     justify-content: center;
 }
 
-.portfolio-card-image.sky {
+/* .portfolio-card-image.sky {
     background-color: #e0f2fe;
     background-image:url(georgeflow.png);
     object-fit: contain;
@@ -377,9 +377,15 @@ nav {
     overflow: hidden;
     color: #7dd3fc;
     display: block;
-}
+} */
 
-.portfolio-card-image.purple {
+.portfolio-card-image.sky img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+/* .portfolio-card-image.purple {
     background-color: #f3e8ff;
     color: #d8b4fe;
     background-image: url(memory-flip-game.png);
@@ -389,6 +395,13 @@ nav {
     overflow: hidden;
     color: #7dd3fc;
     display: block;
+} */
+
+.portfolio-card-image.purple img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center center;
 }
 
 .portfolio-card h3 {
@@ -508,7 +521,7 @@ nav {
 }
 
 .contact-form-wrapper {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.164);
     padding: 2rem;
     border-radius: 15px;
     backdrop-filter: blur(10px);
@@ -525,7 +538,7 @@ nav {
         width: 100%;
         padding: 1rem;
         border: none;
-        background: rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.219);
         border-radius: 12px;
         color: #fff;
         font-size: 1rem;
@@ -535,14 +548,15 @@ nav {
 }
 .input-group input::placeholder,
 .input-group textarea::placeholder {
-        color: rgba(255, 255, 255, 0.5);
+        color: rgba(0, 0, 0);
+        font-weight: 200;
 }
 
 .input-group input:focus,
 .input-group textarea:focus {
         outline: none;
         border-color: rgba(255, 255, 255, 0.5);
-        background: rgba(255, 255, 255, 0.15);
+        background: rgba(255, 255, 255, 0.26);
 }
 
 .input-group textarea {
@@ -874,4 +888,4 @@ footer {
                 flex-direction: column;
                 gap: 1rem;
             }
-        }        
+        }

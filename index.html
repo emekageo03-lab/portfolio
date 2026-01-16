@@ -92,8 +92,8 @@
                             <span class="btn-icon">▶</span><a href="#contact">Hire Me</a>
                         </button>
                         <button class="btn btn-secondary">
-                            <span class="btn-icon">📄</span>
-                            Resume
+                            <span class="btn-icon">📄</span><a href="My-resume.pdf" target="_blank">
+                            Resume</a>
                         </button>
                     </div>
                 </div>
@@ -107,13 +107,15 @@
             <h2>Projects</h2>
             <div class="portfolio-grid">
                 <div class="portfolio-card">
-                    <div class="portfolio-card-image sky"><img src=""></div>
+                    <div class="portfolio-card-image sky"><img src="georgeflow.png"></div>
                     <h3>A Landing Page </h3>
                     <p>Modern Landing Page | Glassmorphism Design, Animations & Interactive Form.</p>
                     <a href="project1.html">VIEW FULL CASE STUDY</a>
                 </div>
                 <div class="portfolio-card">
-                    <div class="portfolio-card-image purple"></div>
+                    <div class="portfolio-card-image purple">
+                        <img src="memory-flip-game.png">
+                    </div>
                     <h3>Memory Flip Game</h3>
                     <p>A fun game made purely of HTML, CSS and a little bit of JavaScript.</p>
                     <a href="project2.html">VIEW FULL CASE STUDY</a>
@@ -173,20 +175,23 @@
                 </div>
 
                 <div class="contact-form-wrapper">
+                      <form name="contact" method="POST" action="https://formspree.io/f/mwvppdzb">
+                            
                     <div id="formMessage" class="form-message"></div>
                     <div class="input-group">
-                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="input-group">
-                        <input type="email" id="email" placeholder="Your Email" required>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
                     </div>
                     <div class="input-group">
-                        <input type="text" id="subject" placeholder="Subject" required>
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
                     </div>
                     <div class="input-group">
-                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
                     </div>
-                    <button class="btn btn-primary" onclick="handleSubmit()">Send Message</button>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                      </form>
                 </div>
             </div>
         </div>
@@ -202,7 +207,7 @@
                 <a href="https://x.com/_therealmeai?t=q7U3D7RuSTMKOQzfoBUnVQ&s=09">Twitter</a>
             </div>
         </div>
-        <p class="footer-copyright">© 2025 Emeka George. All rights reserved.</p>
+        <p class="footer-copyright">© 2026 Emeka George. All rights reserved.</p>
     </footer>
 
 

@@ -317,9 +317,12 @@ nav {
 .btn-secondary {
     background: #ff5a8d;
     color: #fff;
+    background: #ff5a8d;
+    color: #fff;
 }
 
 .btn-secondary:hover {
+    background: #ff5a8d;
     background: #ff5a8d;
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
@@ -370,6 +373,7 @@ nav {
 }
 
 /* .portfolio-card-image.sky {
+/* .portfolio-card-image.sky {
     background-color: #e0f2fe;
     background-image:url(georgeflow.png);
     object-fit: contain;
@@ -396,6 +400,13 @@ nav {
     overflow: hidden;
     color: #7dd3fc;
     display: block;
+} */
+
+.portfolio-card-image.purple img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center center;
 } */
 
 .portfolio-card-image.purple img{
@@ -610,6 +621,7 @@ nav {
 
 .contact-form-wrapper {
     background: rgba(255, 255, 255, 0.164);
+    background: rgba(255, 255, 255, 0.164);
     padding: 2rem;
     border-radius: 15px;
     backdrop-filter: blur(10px);
@@ -627,6 +639,7 @@ nav {
         padding: 1rem;
         border: none;
         background: rgba(255, 255, 255, 0.219);
+        background: rgba(255, 255, 255, 0.219);
         border-radius: 12px;
         color: #fff;
         font-size: 1rem;
@@ -638,12 +651,15 @@ nav {
 .input-group textarea::placeholder {
         color: rgba(0, 0, 0);
         font-weight: 200;
+        color: rgba(0, 0, 0);
+        font-weight: 200;
 }
 
 .input-group input:focus,
 .input-group textarea:focus {
         outline: none;
         border-color: rgba(255, 255, 255, 0.5);
+        background: rgba(255, 255, 255, 0.26);
         background: rgba(255, 255, 255, 0.26);
 }
 

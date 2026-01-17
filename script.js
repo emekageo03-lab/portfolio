@@ -24,3 +24,36 @@
                 navLinks.classList.remove('active');
             }
         });
+
+(function(){
+      emailjs.init({
+        publicKey: "YrwtF73M6J9hiZZXH",
+      });
+   })();
+   document.getElementById("myForm").addEventListener("submit", function(event){
+    event.preventDefault()
+    const btn = document.getElementById("submit-btn")
+    const statusMessage = document.getElementById("status-msg")
+    btn.innerText = "sending";
+    btn.disable = true;
+
+    emailjs.sendForm('service_otvqssm', 'template_73d5prj', '#myForm').then(
+  (response) => {
+    console.log('SUCCESS!', response.status, response.text);
+    statusMessage.innerHTML = "Message sent successfully!";
+    statusMessage.style.color = "green";
+    btn.innerText = "send email";
+    btn.disabled = false;
+    document.getElementById("myForm").reset();
+  },
+  (error) => {
+    console.log('FAILED...', error);
+    statusMessage.innerHTML = "Failed to send message. Please try again";
+    statusMessage.style.color = "red";
+    btn.innerText = "send email";
+    btn.disabled = false;
+  },
+);
+
+
+   });

@@ -6,6 +6,10 @@
     <title>Emeka George | Web Developer Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <header>
@@ -19,7 +23,7 @@
         <ul class="nav-links">
            <li><a href="#">Home</a></li>
            <li><a href="#about">About</a></li>
-           <li><a href="#portfolio" class="active">Project</a></li>
+           <li><a href="#portfolio">Project</a></li>
            <li><a href="#contact">Contact</a></li>
         </ul>
         </nav>
@@ -109,16 +113,46 @@
                 <div class="portfolio-card">
                     <div class="portfolio-card-image sky"><img src="georgeflow.png"></div>
                     <h3>A Landing Page </h3>
+                    <div class="stack">
+                        <button class="stk">HTML</button>
+                        <button class="stk">CSS</button>
+                        <button class="stk">JavaScript</button>
+                    </div>
                     <p>Modern Landing Page | Glassmorphism Design, Animations & Interactive Form.</p>
-                    <a href="project1.html">VIEW FULL CASE STUDY</a>
+                    <div class="a-tag">
+                    <a href="https://github.com/emekageo03-lab/first-landing-page" class="demo-btm" target="_blank">GitHub
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                    <a href="project1.html" class="demo-btn" target="_blank">Live Demo
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+
+                    </div>
                 </div>
+
+
                 <div class="portfolio-card">
                     <div class="portfolio-card-image purple">
                         <img src="memory-flip-game.png">
                     </div>
                     <h3>Memory Flip Game</h3>
-                    <p>A fun game made purely of HTML, CSS and a little bit of JavaScript.</p>
-                    <a href="project2.html">VIEW FULL CASE STUDY</a>
+                    <div class="stack">
+                        <button  class="stk">HTML</button>
+                        <button class="stk">CSS</button>
+                      <button class="stk">JavaScript</button>
+
+                    </div>
+                    <p>A fun game made purely of HTML, CSS and a little bit of JavaScript. Pass the time with this easy to play game.</p>
+                    <div class="a-tag">
+                     <a href="https://github.com/emekageo03-lab/memory-flip-game" class="demo-btm" target="_blank">GitHub
+                    <i class="fab fa-github"></i>
+
+                    </a>
+                    <a href="project2.html" class="demo-btn" target="_blank">Live Demo
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -152,32 +186,46 @@
             <div class="form-container">
                 <div class="contact-info">
                     <div class="info-item">
-                        <div class="info-icon">📧</div>
+                        <div class="info-icon">
+                            <a href="mailto:emekageo03@gmail.com" style="text-decoration: none; color: #ff5a8d;">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
                         <div>
                             <h4>Email</h4>
-                            <p>emekageo03@gmail.com</p>
+                            
                         </div>
                     </div>
-                    <div class="info-item">
-                        <div class="info-icon">📱</div>
+                    <div class="info-ite">
+                        <div class="info-icon">
+                            <a href="https://wa.me/07035075484" target="_blank" rel="noopener noreferrer" style="color: #ff5a8d;">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
                         <div>
-                            <h4>Phone</h4>
-                            <p>+234 703 507 5484</p>
+                            <h4 class="Whatsapp">Whatsapp</h4>
+                    
                         </div>
                     </div>
-                    <div class="info-item">
-                        <div class="info-icon">📍</div>
+                    <div class="info-ite">
+                        <div class="info-icon">
+                              <a href="https://www.linkedin.com/in/emeka-george-7658a7251?utm_source=share&utm_campaign=share_via&utm_conte" target="_blank" rel="noopener noreferrer" style="color: #ff5a8d; font-size: 2rem; text-decoration: none;">
+                                <i class="fab fa-linkedin"></i>
+                              </a>
+                        </div>
                         <div>
-                            <h4>Office</h4>
-                            <p>Enugu state, New haven</p>
+                            <h4 class="Whatsapp">Linkedin</h4>
+                    
                         </div>
                     </div>
+                
                 </div>
 
                 <div class="contact-form-wrapper">
-                      <form name="contact" method="POST" action="https://formspree.io/f/mwvppdzb">
+                      <form id="myForm"  name="contact" >
                             
-                    <div id="formMessage" class="form-message"></div>
+                    <div id="status-msg" class="form-message"></div>
+                    <p id="status-msg" style="display:none"></p>
                     <div class="input-group">
                         <input type="text" id="name" name="name" placeholder="Your Name" required>
                     </div>
@@ -190,7 +238,7 @@
                     <div class="input-group">
                         <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <button type="submit" id="submit-btn" class="btn btn-primary">Send Message</button>
                       </form>
                 </div>
             </div>
@@ -202,9 +250,16 @@
         <div class="footer-content">
             <div class="footer-logo">Emeka<span>George</span></div>
             <div class="footer-links">
-                <a href="https://github.com/emekageo03-lab">GitHub</a>
-                <a href="https://www.linkedin.com/in/emeka-george-7658a7251?utm_source=share&utm_campaign=share_via&utm_conte">LinkedIn</a>
-                <a href="https://x.com/_therealmeai?t=q7U3D7RuSTMKOQzfoBUnVQ&s=09">Twitter</a>
+                <a href="https://github.com/emekageo03-lab" target="_blank" rel="noopener noreferrer" style="color: #14b8a6; font-size: 2rem; text-decoration: none;">
+                    <i class="fab fa-github"></i>
+
+                </a>
+                <a href="https://www.linkedin.com/in/emeka-george-7658a7251?utm_source=share&utm_campaign=share_via&utm_conte" target="_blank" rel="noopener noreferrer" style="color: #14b8a6; font-size: 2rem; text-decoration: none;">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://x.com/_therealmeai?t=q7U3D7RuSTMKOQzfoBUnVQ&s=09" target="_blank" rel="noopener noreferrer" style="color: #14b8a6; font-size: 2rem; text-decoration: none;">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
             </div>
         </div>
         <p class="footer-copyright">© 2026 Emeka George. All rights reserved.</p>

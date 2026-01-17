@@ -27,7 +27,6 @@ nav {
     align-items: center;
     width: 100%;
 }
-
 .logo {
     font-size: 1.25rem;
     font-weight: 700;
@@ -283,6 +282,7 @@ nav {
     display: flex;
     gap: 20px;
     margin-top: 2px;
+    justify-content: center;
 }
 .cta-buttons a{
     text-decoration: none;
@@ -344,6 +344,7 @@ nav {
     font-size: 2.25rem;
     font-weight: 700;
     margin-bottom: 3rem;
+    text-align: center;
 }
 
 .portfolio-grid {
@@ -415,12 +416,7 @@ nav {
     margin-bottom: 1rem;
 }
 
-.portfolio-card a {
-    color: #14b8a6;
-    font-weight: 700;
-    font-size: 0.875rem;
-    text-decoration: none;
-}
+
 
         /* Experience Section */
 .experience {
@@ -491,11 +487,102 @@ nav {
     flex-direction: column;
     gap: 30px;
 }
+.stack{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+.stack :where(.stk){
+    border-radius: 8px;
+    padding: 7px 5px;
+    background: linear-gradient();
+    outline: none;
+    overflow: hidden;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 12px;
+}
+.a-tag{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.demo-btm{
+    background-color: #ff5a8d;
+    border: 2px solid #ff5a8d;
+    align-items: center;
+    padding: 12px 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-size: 600;
+    text-decoration: none;
+    display: inline-flex;
+    cursor: pointer;
+    transition: all 0.3 ease;
+    gap: 10px;
+    color: white;
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-decoration: none;
+}
+
+.demo-btm:hover{
+    background-color: #ff5a8d;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+.demo-btm i{
+    font-size: 18px;
+}
+
+.demo-btn{
+    background-color: white;
+    border: 2px solid #ff5a8d;
+    align-items: center;
+    padding: 12px 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-size: 600;
+    text-decoration: none;
+    display: inline-flex;
+    cursor: pointer;
+    transition: all 0.3 ease;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-decoration: none;
+    color: #0f172a;
+}
+
+.demo-btn:hover{
+    background-color: #ff5a8d;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+.demo-btn i{
+    font-size: 18px;
+}
 
 .info-item {
     display: flex;
     gap: 20px;
-    align-items: flex-start;
+    align-items: center;
+    
+    
+}
+.info-ite {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    
 }
 
 .info-icon {
@@ -513,6 +600,7 @@ nav {
 .info-item h4 {
     font-size: 18px;
     margin-bottom: 5px;
+    align-items: center;
 }
 
 .info-item p {
@@ -681,6 +769,12 @@ footer {
                 gap: 15px;
             }
 
+.portfolio-card-image.sky img{
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+    object-position: center center;
+}
             .cta-buttons {
                 flex-direction: column;
             }

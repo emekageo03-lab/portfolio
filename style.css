@@ -17,6 +17,7 @@ nav {
     padding: 1.5rem 5%;
     background: white;
     position: sticky;
+    width: 100%;
     top: 0;
     z-index: 2000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -48,13 +49,12 @@ nav {
 .nav-links a {
     text-decoration: none;
     color: #475569;
-    font-size: 1rem;
-    transition: color 0.3s;
-    font-weight: 500;           
+    font-size: 1.1rem;
+    transition: color 0.4s;
+    font-weight: 600;           
 }
 
-.nav-links a:hover,
-.nav-links a.active {
+.nav-links a:hover{
     color: #1dd1a1;
 }
 
@@ -105,20 +105,20 @@ nav {
     content: "Frontend Developer";
     color:aqua;
     padding-left: 0.5;
-    animation: text 10s infinite;
+    animation: text 7s infinite;
 }
 @keyframes text {
-    0%, 25%{
+    0%, 33%{
         content: "Frontend Developer";
     }
-    26%, 50%{
+    34%, 66%{
         content: "Web Designer";
     }
-    51%, 75%{
-        content: "UI/UX Designer";
-    }
-    76%, 100%{
+    67%, 99%{
         content: "Graphic Designer";
+    }
+     100%{
+        content: "Frontend Developer";
     }
 }  
 .hero-text p {
@@ -139,13 +139,18 @@ nav {
 .hero-image {
     display: flex;
     justify-content: center;
+    margin-right: 100px;
+    padding-right: 10px;
 }
+/* }
+.hero-text, .hero-image{
+    column-gap: 60px;
+} */
 
 .blob-shape {
     width: 20rem;
     height: 20rem;
     border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
-    background: linear-gradient(135deg, #2dd4bf 0%, #3b82f6 100%);
     position: relative;
     display: flex;
     align-items: center;
@@ -593,10 +598,9 @@ nav {
     display: flex;
     gap: 20px;
     align-items: center;
-    
 }
 
-.info-icon {
+.info-icon a i{
     font-size: 32px;
     width: 60px;
     height: 60px;
@@ -606,6 +610,20 @@ nav {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+}
+.info-icon{
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.info-icon a:hover {
+    transform: translateY(-5px);
+    border: none;
+    overflow: hidden;
+    
 }
 
 .info-item h4 {
@@ -727,6 +745,12 @@ footer {
     color: white;
     text-decoration: none;
 }
+.footer-links a:hover {
+    transform: translateY(-5px);
+    border: none;
+    overflow: hidden;
+    
+}
 
 .footer-copyright {
     text-align: center;
@@ -790,6 +814,11 @@ footer {
     height: 100%;
     object-fit:fill;
     object-position: center center;
+}
+.hero-image {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
 }
             .cta-buttons {
                 flex-direction: column;
@@ -869,10 +898,12 @@ footer {
                 padding: 2rem 5%;
                 text-align: center;
                 min-height: auto;
+                position: sticky;
             }
 
             .hero-content {
                 max-width: 100%;
+
             }
 
             .hero h1 {
@@ -882,11 +913,14 @@ footer {
 
             .hero p {
                 font-size: 1rem;
+                
             }
 
             .hero-image {
                 flex: 0 0 250px;
                 margin-bottom: 2rem;
+                margin-left: 80px;
+                position: sticky;
             }
 
             .about {
